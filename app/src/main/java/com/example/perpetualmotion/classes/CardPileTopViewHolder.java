@@ -35,6 +35,6 @@ public class CardPileTopViewHolder extends RecyclerView.ViewHolder implements Vi
 
     @Override
     public void onClick(View v) {
-        // TODO Send click out to MainActivity via Adapter
+        CardPilesAdapter.sAdapterOnItemClickListener.onItemClick(getAdapterPosition(), v);
     }
 }
